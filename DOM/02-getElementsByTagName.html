@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>复制1</li>
+    <li>复制2</li>
+    <li>复制3</li>
+    <li>复制4</li>
+</ul>
+
+<script>
+    // 1.返回的是 获取过来元素对象的集合 以伪数组的形式存储
+    var lis = document.getElementsByTagName("li");
+    console.log(lis);
+    console.log(lis[0]);
+
+    // 2.我们想要依次打印里面的元素对象可以用遍历
+    for (var i = 0; i < lis.length; i++) {
+        console.log(lis[i]);
+    }
+</script>
+</body>
+</html>
